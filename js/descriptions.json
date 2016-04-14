@@ -1,0 +1,49 @@
+{
+  "descriptions": {
+  	"main": [{
+  			"text": "<h4>Das Hauptmenü bietet dem Anwender eine Vielzahl von Optionen, die nun im einzelnen vorgestellt werden</h4>"
+  		},{
+  			"text": "<h4>Im Hauptmenü hat man die Auswahl zwischen 6 verschiedenen Normen unter denen <a href=\"#emvtest\">Tests</a> durchgeführt werden können.</h4>"
+  		},{
+  			"text": "<h4>Mit <b>PDF erstellen</b> kann die Prüfung als Pdf-Datei exportiert werden.</h4>"
+  		},{
+  			"text": "<h4>Ein bereits angefanger Prüfprozess kann wieder aufgenommen werden, mit dem Button <b>Report laden</b> kann eine vorher abgespeicherte XML-Datei mit Prüfdaten geladen werden.</h4>"
+  		},{
+  			"text": "<h4>Das Speichern von Prüfdaten kann mittels <b>Report speichern</b> vollzogen werden.</h4>"
+  		},{
+  			"text": "<h4>Der Button <b>Beenden</b> beendet das Programm.</h4>"
+  		},{
+  			"text": "<h4>Die gesammelten Prüfdaten können unter dem reiter <a href=\"#datenbearbeiten\">Prüfbericht</a> eingesehen werden.</h4>"
+  		},{
+  			"text": "<h4>Unter dem Reiter <a href=\"#einstellungen\">Einstellungen</a> können die <b>COM-Ports</b> der Geräte verändert werden und Kalibrierungsdaten für CDN's können mit dem Gerät emtest 500N1 geladen, gespeichert oder erhoben werden.</h4>"
+  		}],
+  		"devices": [{
+  			"text": "<h4>In der Datei devices.json, im gleichen Verzeichnis wie die Executable des Programms, sind bereits erfasste Geräte mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum abgelegt.</h4>"
+  		},{
+  			"text": "<h4>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>"
+  		},{
+  			"text": "<h4>Geräte können aus der Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.</h4>"
+  		},{
+  			"text": "<h4>Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.</h4>"
+  		},{
+  			"text": "<h4>Alle bisher eingepflegten Geräte können in der rechten Liste eingesehen werden.</h4>"
+  		}],
+  		"versauf": [{
+  			"text": "<h4>Wenn noch kein Versuchsaufbau für einen Test hinterlegt ist muss dieser angelegt werden.</h4>"
+  		},{
+  			"text": "<h4>Im Kommentarfeld können Hinweise zu dem Versuchsaufbau vermerkt werden. Mit den Buttons <b>Device</b> und <b>Bild</b> ist es möglich Bilder und <a href=\"#geraete\">Geräte</a> dem Versuchsaufbau zuzuweisen.</h4>"
+  		}],
+  		"pstart": [{
+  			"text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
+  		},{
+  			"text": "<h4>Wenn die Informationen eingetragen wurden, kann die Eingabe durch den <b>Ok</b>-Button bestätigt werden und das Hauptmenü wird sichtbar</h4>"
+  		}],
+      "emv": [{
+          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>"
+      }, {
+          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>nich ok</b> bestätigt werden.</h4>"
+      }, {
+          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>doch Ok</b> bestätigt werden.</h4>"
+      }]
+  }
+}
