@@ -18,5 +18,16 @@ $(document).ready(function(){
 
 
 
+    $('#bt1').click(function() {
+        $('#mailcontent').attr('action',
+                       'mailto:jan_scholz@gmx.net?subject=' +
+                       'Anfrage EMV-Test-Software von ' + 
+                       $('#email').val() + '&body=' + $('#commentsText').val());
+        $('#mailcontent').submit();
+        console.log('mail');
+    });
+
+
+
 });
 

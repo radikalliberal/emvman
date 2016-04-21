@@ -31,7 +31,7 @@
   		"versauf": [{
   			"text": "<h4>Wenn noch kein Versuchsaufbau für einen Test hinterlegt ist muss dieser angelegt werden.</h4>"
   		},{
-  			"text": "<h4>Im Kommentarfeld können Hinweise zu dem Versuchsaufbau vermerkt werden. Mit den Buttons <b>Device</b> und <b>Bild</b> ist es möglich Bilder und <a href=\"#geraete\">Geräte</a> dem Versuchsaufbau zuzuweisen.</h4>"
+  			"text": "<h4>Im Kommentarfeld können Hinweise zu dem Versuchsaufbau vermerkt werden. Mit den Buttons <b>Device</b> und <b>Bild</b> ist es möglich Bilder und <a href=\"#geraete\">Geräte</a> dem Versuchsaufbau zuzuweisen. Bereits erfasste Geräte oder Bilder können aus der Tabelle gelöscht werden indem sie markiert werden und im Anschluss <b>Entf</b> gedrückt wird. Es wird danach ein Dialog geöffnet der nochmals nachfragt ob wirklich gelöscht werden soll.</h4>"
   		}],
   		"pstart": [{
   			"text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
@@ -39,11 +39,35 @@
   			"text": "<h4>Wenn die Informationen eingetragen wurden, kann die Eingabe durch den <b>Ok</b>-Button bestätigt werden und das Hauptmenü wird sichtbar</h4>"
   		}],
       "emv": [{
-          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>"
+          "text": "<h4>Sobald einer der Sechs Buttons für Tests unter der gewünschten Norm betätigt wurde, wird im rechten Teil des Hauptmenüs das Programm zur Durchführung des Tests aufgerufen. In diesem Fall handelt es sich um <b>Störaussendung</b> mit dem Gerät RSA5106A.<br>Man hat nun die Möglichkeit einen eigenen Test zu erstellen oder einen bereits gespeicherten Test zu laden.<br>Für Tests mit dem Gerät RSA5106A ist es nicht sinnvoll benutzerdefinierte Test anzulegen da Einstellungen direkt an dem Gerät vorgenommen werden während der Prüfung.</h4>"
       }, {
-          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>nich ok</b> bestätigt werden.</h4>"
+          "text": "<h4><b>Einen Test laden</b><br>Für alle Normen sind Standardtests abgelegt die geladen werden können. Sie sind mit <b>Standardtest</b> gekennzeichnet. In diesem Menü kann ein Test ausgewählt werden und die Auswahl kann dann mit <b>Ok</b> bestätigt werden. Der ausgewählte Test wird dann in das Programm übernmommen.</h4>"
       }, {
-          "text": "<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>doch Ok</b> bestätigt werden.</h4>"
+          "text": "<h4><b>Test bearbeiten (1)</b><br>Die gespeicherten Tests können durch einen <b>Doppelklick</b> oder <b>Return/Enter</b> bearbeitet werden. Sie werden dann gefragt ob der gewählte Test bearbeitet werden soll eine Kopie des Tests bearbeitet werden soll. Das folgende Menü kann auch mit dem Knopf <b>manueller Test</b> erreicht werden. In diesem Fall werden die Werte mit dem dem kleinstmöglichen Parametern initialisiert.</h4>"
+      }, {
+          "text": "<h4><b>Test bearbeiten (2) HF-Felder</b><br>Für den Test HF-Felder können die Parameter Haltezeit, Start- und Stopfrequenz sowie Spannung und Modulationsart ausgewählt werden. Es können nur Parameter gewählt werden die auch tatsächlich von dem Gerät umgesetzt werden können. Werte die nicht umsetzbar sind werden auf den nächstmöglichen Wert korrigiert.</h4>"
+      }, {
+          "text": "<h4><b>Test bearbeiten (3) Surge</b><br>Es können bis zu 4 verschiedene Prüfspannungen gewählt werden, die Eingabefelder werden sichbar sobald die Anzahl im markierten Feld erhöht wird.</h4>"
+      }, {
+          "text": "<h4><b>Test bearbeiten (4) Spannungsunterbrechung</b><br>Hier können zum einen die genormten Reduktionen mit der dazugehörigen Dauer gewählt werden und die unterschiedlichen Phasenwinkel bei Eintritt der Spannungsreduktion. REP-TIME ist die Zeit zwischen den einzelnen Reduktionen. COUNTER bezeichnet die Anzahl der Wiederholungen für Reduktionen mit gleicher Intensität, Dauer und Phasenwinkel.</h4>"
+      }, {
+          "text": "<h4><b>Test bearbeiten (5) Burst</b><br>Wie bei Surge sind auch hier mehrere Spannungen wählbar. Die Spike-Frequenz bestimmt die Anzahl der Pulse in einem Burst. Die Burstdauer bestimmt die Länge eines Burstpaketes. Die Burstperiode bestimmt die Frequenz der Burstpakete. Unter dem Parameter Testdauer verbirgt sich die Zeit, die gewartet wird nachdem die gewünschten Burstpakete ausgesendet wurden, bevor neue Störungen auf die Baugruppe eingeprägt werden.</h4>"
+      }, {
+          "text": "<h4><b>Test starten</b><br>Nachdem ein Test ausgewählt oder erstellt wurde kann der Test durch das Drücken des Knopfes <b>Start</b> gestartet werden. Das Programm wird nun die notwendigen Befehle an das Gerät schicken.</h4>"
+      }, {
+          "text": "<h4><b>Testverlauf</b><br>Die gesendeten Kommandos sind um Log zu erkennen. Zeilen die mit \"<b>--></b>\" beginnen zeigen einen Befehl des Programms an das Gerät. Zeilen mit \"<b><--</b>\" kennzeichnen eine Antwort des Gerätes.</h4>"
+      }, {
+          "text": "<h4><b>Zusatzoptionen RSA5106A</b><br>Nachdem der Test abgeschlossen ist können im Fall des Gerätes RSA5106A noch zwei weitere Aktionen durchgeführt werden. Zum einen können die aktuellen Einstellungen in das Programm zurückgelesen werden (sinnvoll falls noch Änderungen nach der Ansteuerung mit LabView vollzogen worden) oder es kann ein Screenshot von dem aktuellen Bild des Spektrumanalyzers gemacht werden. Dieser ist über das Netzlaufwerk U: verfügbar und kann im Prüfbericht genutzt werden.</h4>"
+      }],
+      "proto": [{
+        "text": "<h4><b>Ergebnisse protokollieren<b/><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>"
+      }],
+      "daten": [{
+        "text": "<h4><b>Daten einsehen<b/><br>Unter dem zweiten Reiter <b>\"Prüfbericht\"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>"
+      },{
+        "text": "<h4><b>Testdaten bearbeiten<b/><br>Wenn ein Test-Knoten angewählt wird, wird ein Fenster geöffnet das es ermöglicht alle Parameter mit Ausnahme des Logs zu bearbeiten.</h4>"
+      },{
+        "text": "<h4><b>Versuchsaufbauten bearbeiten<b/><br>Wie auch beim Anlegen des Versuchsaufbau ist es hier möglich Kommentare zu verfassen sowie Bilder und Geräte dem Versuchsaufbau zuzuweisen. Bilder und Geräte könnenm wie gewohnt , wenn nötig, entfernt werden.</h4>"
       }]
   }
 }

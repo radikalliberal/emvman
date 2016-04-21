@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+	<!--
+	Es wurde das Appbay Template von Christopher Gimmer genutzt, vielen Dank für die Bereitstellung.
+
+	Copyright (c) <2016> <Jan Scholz>
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+	-->
 	<html lang="en">
 		<head>
 			<meta charset="utf-8">
@@ -57,7 +71,7 @@
 							<li><a href="#hauptmenue">Hauptmenü</a></li>
 							<li><a href="#Versuchsaufbau">Versuchsaufbau</a></li>
 							<li><a href="#emvtest">EMV-Prüfung</a></li>
-							<li><a href="#testimonialsWrap">Protokollierung</a></li>
+							<li><a href="#protokoll">Protokollierung</a></li>
 							<li><a href="#datenbearbeiten">Daten bearbeiten</a></li>
 							<li><a href="#einstellungen">Einstellungen</a></li>
 						</ul>
@@ -128,8 +142,8 @@
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("pstart", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("pstart", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("pstart", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("pstart", "forward")' ></span>
 					    </div>
 					</div>
 
@@ -191,8 +205,8 @@
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("main", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("main", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("main", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("main", "forward")' ></span>
 					    </div>
 					</div>
 
@@ -239,8 +253,8 @@
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("versauf", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("versauf", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("versauf", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("versauf", "forward")' ></span>
 					    </div>
 					    <script>
 					        jssor_slider_init("jssor_3","versauf");
@@ -294,8 +308,8 @@
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("devices", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("devices", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("devices", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("devices", "forward")' ></span>
 					    </div>
 					    <script>
 					        jssor_slider_init("jssor_4","devices");
@@ -331,18 +345,39 @@
 					        </div>
 					        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden;">
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/adddevhover.png" />
+					                <img data-u="image" src="assets/img/emvtest1.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtest.png" />
+					                <img data-u="image" src="assets/img/emvtest_sa_testladen.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtesthover.png" />
+					                <img data-u="image" src="assets/img/emvtest_hf_testladen2.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_hf_testbearbeiten.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_surge_testbearbeiten.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_spunt_testbearbeiten.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_burst_testbearbeiten.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_sa_teststarten.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_sa_teststarten2.png" />
+					            </div>
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/emvtest_sa_teststarten3.png" />
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("emv", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("emv", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("emv", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("emv", "forward")' ></span>
 					    </div>
 					    <script>
 					        jssor_slider_init("jssor_5","emv");
@@ -353,9 +388,7 @@
 							<a href="#geraete" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
 						</div>
 						<div class="description" id="emv">
-							<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br>
-							Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br>
-							Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>
+							<h4>Sobald einer der Sechs Buttons für Tests unter der gewünschten Norm betätigt wurde, wird im rechten Teil des Hauptmenüs das Programm zur Durchführung des Tests aufgerufen. In diesem Fall handelt es sich um <b>Störaussendung</b> mit dem Gerät RSA5106A.<br>Man hat nun die Möglichkeit einen eigenen Test zu erstellen oder einen bereits gespeicherten Test zu laden.<br>Für Tests mit dem Gerät RSA5106A ist es nicht sinnvoll benutzerdefinierte Test anzulegen da Einstellungen direkt an dem Gerät vorgenommen werden während der Prüfung.</h4>
 						</div>
 						<div class="nextprev">
 							<a href="#datenbearbeiten" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
@@ -366,7 +399,47 @@
 		</div>
 	</div>
 
-
+	<div id="protokoll">
+		<div class="instruction">
+			<div class="container">
+				<h2 class="sectionTitle">Bearbeitung von Prüfdaten</h2>
+				<div class="row">
+					<div class="col-sm-8 feature vcenter">
+						<div id="jssor_6" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
+					        <!-- Loading Screen -->
+					        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+					            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					            <div style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+					        </div>
+					        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden;">
+					            <div data-p="112.50" style="display: none;">
+					                <img data-u="image" src="assets/img/protokoll1.png" />
+					            </div>
+					        </div>
+					        <!-- Arrow Navigator -->
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("proto", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("proto", "forward")' ></span>
+					    </div>
+					    <script>
+					        jssor_slider_init("jssor_6","proto");
+					    </script>
+						
+					</div>
+					<div class="col-sm-3 vcenter text-justify">
+						<div class="nextprev">
+							<a href="#emv" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
+						</div>
+						<div class="description" id="proto">
+							<h4><b>Ergebnisse protokollieren<b/><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>
+						</div>
+						<div class="nextprev">
+							<a href="#kalibrieren" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div id="datenbearbeiten">
 		<div class="instruction">
@@ -382,18 +455,18 @@
 					        </div>
 					        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden;">
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/adddevhover.png" />
+					                <img data-u="image" src="assets/img/pruefdatenbearbeiten1.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtest.png" />
+					                <img data-u="image" src="assets/img/pruefdatenbearbeiten2.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtesthover.png" />
+					                <img data-u="image" src="assets/img/pruefdatenbearbeiten3.png" />
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("daten", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("daten", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("daten", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("daten", "forward")' ></span>
 					    </div>
 					    <script>
 					        jssor_slider_init("jssor_6","daten");
@@ -405,7 +478,7 @@
 							<a href="#emv" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
 						</div>
 						<div class="description" id="daten">
-							<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br> Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br> Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>
+							<h4><b><b>Daten einsehen<b/><br>Unter dem zweiten Reiter <b>"Prüfbericht"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>
 						</div>
 						<div class="nextprev">
 							<a href="#kalibrieren" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
@@ -440,8 +513,8 @@
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
-					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("einst", "backward")' data-toggle="tooltip" title="vorheriges Bild"></span>
-					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("einst", "forward")' data-toggle="tooltip" title="nächstes Bild"></span>
+					        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("einst", "backward")' ></span>
+					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("einst", "forward")' ></span>
 					    </div>
 					    <script>
 					        jssor_slider_init("jssor_7","einst");
@@ -469,17 +542,17 @@
 			<div class="container">
 				<div class="row">
 						<div class="col-xs-12">
-						<h2 class="sectionTitle">Contact us</h2>
+						<h2 class="sectionTitle">Kontakt</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 text-center">
 						<div class="blurb">
-						Want to chat? Send us a message. We'd love to hear from you!
+						Sind noch Fragen offen? Kontaktieren Sie mich gerne per Mail 
 						</div>
 					</div>
 				</div>
-					<div class="row">
+					<div class="row" id="mailcontent">
 						<div class="col-sm-4 col-sm-offset-2">
 							<div class="inputContainer">
 							<label>Name</label>
@@ -494,12 +567,12 @@
 						</div>
 						<div class="col-sm-8 col-sm-offset-2">
 							<div class="inputContainer">
-							<label class="screen-reader-text">Message</label>
+							<label class="screen-reader-text">Nachricht</label>
 								<textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
 							</div>
 						</div>
 						<div class="col-sm-8 col-sm-offset-2">
-							<button name="submit" type="button" class="btn btn-primary btn-lg">Send</button>
+							<button name="submit" type="button" class="btn btn-primary btn-lg" id="bt1">senden</button>
 						</div>
 					</div>
 			</div>
@@ -510,33 +583,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<p>Copyright &copy; 2014 AppBay - Responsive App Landing Page Template. Built by <a href="http://bootstrapbay.com">BootstrapBay</a>. All Rights Reserved</p>
-					<p class="social">
-						<a href="https://www.facebook.com/bootstrapbay">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-							</span>
-						</a>
-						<a href="https://twitter.com/bootstrapbay">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-							</span>
-						</a>
-						<a href="https://plus.google.com/+BootstrapbayThemes">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-							</span>
-						</a>
-						<a href="http://www.youtube.com/user/bootstrapbayofficial">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle fa-stack-2x"></i>
-								<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-							</span>
-						</a>
-					</p>
+					<p>Copyright &lt;2016&gt; &lt;Jan Scholz&gt; MIT License
 				</div>
 			</div>
 		</div>
