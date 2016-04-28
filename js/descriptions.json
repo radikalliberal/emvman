@@ -33,6 +33,11 @@
   		},{
   			"text": "<h4>Im Kommentarfeld können Hinweise zu dem Versuchsaufbau vermerkt werden. Mit den Buttons <b>Device</b> und <b>Bild</b> ist es möglich Bilder und <a href=\"#geraete\">Geräte</a> dem Versuchsaufbau zuzuweisen. Bereits erfasste Geräte oder Bilder können aus der Tabelle gelöscht werden indem sie markiert werden und im Anschluss <b>Entf</b> gedrückt wird. Es wird danach ein Dialog geöffnet der nochmals nachfragt ob wirklich gelöscht werden soll.</h4>"
   		}],
+      "pstart2": [{
+        "text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
+      },{
+        "text": "<h4>Wenn die Informationen eingetragen wurden, kann die Eingabe durch den <b>Ok</b>-Button bestätigt werden und das Hauptmenü wird sichtbar</h4>"
+      }],
   		"pstart": [{
   			"text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
   		},{
@@ -60,14 +65,21 @@
           "text": "<h4><b>Zusatzoptionen RSA5106A</b><br>Nachdem der Test abgeschlossen ist können im Fall des Gerätes RSA5106A noch zwei weitere Aktionen durchgeführt werden. Zum einen können die aktuellen Einstellungen in das Programm zurückgelesen werden (sinnvoll falls noch Änderungen nach der Ansteuerung mit LabView vollzogen worden) oder es kann ein Screenshot von dem aktuellen Bild des Spektrumanalyzers gemacht werden. Dieser ist über das Netzlaufwerk U: verfügbar und kann im Prüfbericht genutzt werden.</h4>"
       }],
       "proto": [{
-        "text": "<h4><b>Ergebnisse protokollieren<b/><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>"
+        "text": "<h4><b>Ergebnisse protokollieren</b><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>"
       }],
       "daten": [{
-        "text": "<h4><b>Daten einsehen<b/><br>Unter dem zweiten Reiter <b>\"Prüfbericht\"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>"
+        "text": "<h4><b>Daten einsehen</b><br>Unter dem zweiten Reiter <b>\"Prüfbericht\"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>"
       },{
-        "text": "<h4><b>Testdaten bearbeiten<b/><br>Wenn ein Test-Knoten angewählt wird, wird ein Fenster geöffnet das es ermöglicht alle Parameter mit Ausnahme des Logs zu bearbeiten.</h4>"
+        "text": "<h4><b>Testdaten bearbeiten</b><br>Wenn ein Test-Knoten angewählt wird, wird ein Fenster geöffnet das es ermöglicht alle Parameter mit Ausnahme des Logs zu bearbeiten.</h4>"
       },{
-        "text": "<h4><b>Versuchsaufbauten bearbeiten<b/><br>Wie auch beim Anlegen des Versuchsaufbau ist es hier möglich Kommentare zu verfassen sowie Bilder und Geräte dem Versuchsaufbau zuzuweisen. Bilder und Geräte könnenm wie gewohnt , wenn nötig, entfernt werden.</h4>"
+        "text": "<h4><b>Versuchsaufbauten bearbeiten</b><br>Wie auch beim Anlegen des Versuchsaufbau ist es hier möglich Kommentare zu verfassen sowie Bilder und Geräte dem Versuchsaufbau zuzuweisen. Bilder und Geräte könnenm wie gewohnt , wenn nötig, entfernt werden.</h4>"
+      }],
+      "einst": [{
+        "text": "<h4>Im rechten Reiter \"Einstellungen\" können die Com-Ports den angeschlossenen Geräte zugewiesen werden. Weiter ist es möglich <b>Kalibirerungsdaten</b> für CDN's für das Gerät CWS 500N1 abzuspeichern und zu laden.</h4>"
+      },{
+        "text": "<h4>Wenn der Button \"Kalibirerung von CDN\" gedrückt wird erscheint ein Dialog und gibt die Möglichkeit Kalibirerungsdaten zu laden oder aus dem Speicher des Gerätes CWS 500N1 abzuspeichern auf die Festplatte.</h4>"
+      },{
+        "text": "<h4>Wenn \"einlesen\" gewählt wurde oder wenn die Daten vollständig aus dem Gerät ausgelesen wurden erscheint ein Dateidialog. Die Daten können hier geladen bzw. gespeichert werden. Es sind bereits Kalibirerungsdaten unter \"N:\\intern\\Prüffeld\\EMV-Pruefung\\Kalibrationsdaten\" abgelegt.</h4>"
       }]
   }
 }

@@ -120,6 +120,46 @@
 			</div>
 		</div>
 	</div> <!-- /featureWrap -->
+
+
+	<div id="start">
+		<div class="instruction">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-9 feature vcenter">
+						<div class="slider" id="s1">
+							<a class="control_next" href="javascript:void(0);"  onclick="changeDescription("pstart2", "forward")"><i class="fa arrow-circle-right"></i></a>
+							<a class="control_prev" href="javascript:void(0);"  onclick="changeDescription("pstart2", "backward")"><i class="fa arrow-circle-left"></i></a>
+						    <ul>
+						      <li><img src="assets/img/Entry.png" /></li>
+						      <li><img src="assets/img/Entryhover.png" /></li>
+						    </ul>
+					    </div>
+							
+					 	<script>
+							$("#s1").initSlider("pstart2");
+						</script>
+					</div>
+					<div class="col-sm-3 vcenter text-justify">
+						<h2 class="sectionTitle">Programmstart</h2>
+						<div class="nextprev">
+							<a href="#topWrap" data-toggle="tooltip" title="vorheriges Kapitel" class="anchorLink" rel=""><i class="fa fa-arrow-circle-up icon"></i></a>
+						</div>
+						<div class="description" id="pstart2">
+							<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>
+						</div>
+						<div class="nextprev">
+							<a href="#hauptmenue" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	
+	
 	
 	<div id="start">
 		<div class="instruction">
@@ -402,7 +442,7 @@
 	<div id="protokoll">
 		<div class="instruction">
 			<div class="container">
-				<h2 class="sectionTitle">Bearbeitung von Prüfdaten</h2>
+				<h2 class="sectionTitle">Protokollierung</h2>
 				<div class="row">
 					<div class="col-sm-8 feature vcenter">
 						<div id="jssor_6" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
@@ -423,17 +463,16 @@
 					    <script>
 					        jssor_slider_init("jssor_6","proto");
 					    </script>
-						
 					</div>
 					<div class="col-sm-3 vcenter text-justify">
 						<div class="nextprev">
-							<a href="#emv" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
+							<a href="#emvtest" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
 						</div>
 						<div class="description" id="proto">
-							<h4><b>Ergebnisse protokollieren<b/><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>
+							<h4><b>Ergebnisse protokollieren</b><br>Ist ein Test fertiggestellt kann das Ergbeniss des Tests aufgenommen werden. Die Parameter aus dem Test-Programm werden hierher übernommen, es ist möglich sie hier nochmals zu bearbeiten. Es ist nun außerdem möglich Bilder für diesen Test zu hinterlegen falls es sinnvoll erscheint. Wenn der Knopf <b>Bild</b> gedrückt wird erscheint ein Dateidialog mitdem ein Bild ausgewählt werden kann. Es muss außerdem eine Bildunterschrifft gewählt werden.</h4>
 						</div>
 						<div class="nextprev">
-							<a href="#kalibrieren" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
+							<a href="#datenbearbeiten" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
 						</div>
 					</div>
 				</div>
@@ -447,7 +486,7 @@
 				<h2 class="sectionTitle">Bearbeitung von Prüfdaten</h2>
 				<div class="row">
 					<div class="col-sm-8 feature vcenter">
-						<div id="jssor_6" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
+						<div id="jssor_7" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
 					            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -469,16 +508,15 @@
 					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("daten", "forward")' ></span>
 					    </div>
 					    <script>
-					        jssor_slider_init("jssor_6","daten");
+					        jssor_slider_init("jssor_7","daten");
 					    </script>
-						
 					</div>
 					<div class="col-sm-3 vcenter text-justify">
 						<div class="nextprev">
-							<a href="#emv" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
+							<a href="#protokoll" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
 						</div>
 						<div class="description" id="daten">
-							<h4><b><b>Daten einsehen<b/><br>Unter dem zweiten Reiter <b>"Prüfbericht"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>
+							<h4><b>Daten einsehen</b><br>Unter dem zweiten Reiter <b>"Prüfbericht"</b> sind die bisher gesammelten Daten der Prüfung sichtbar gemacht. Unter einer Norm (z.B. Surge, Burst etc.) sind einmal der Versuchsaufbau und ein oder mehrere Tests abgelegt.<br>Es ist möglich den Versuchsaufbau oder die einzelnen Tests nachträglich zu bearbeiten. Hierzu wählt man den entsprechenden Knoten an und drückt <b>Enter</b> oder <b>Return</b>.</h4>
 						</div>
 						<div class="nextprev">
 							<a href="#kalibrieren" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
@@ -495,7 +533,7 @@
 				<h2 class="sectionTitle">Einstellungen</h2>
 				<div class="row">
 					<div class="col-sm-8 feature vcenter">
-						<div id="jssor_7" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
+						<div id="jssor_8" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden; visibility: hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
 					            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -503,13 +541,13 @@
 					        </div>
 					        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 920px; overflow: hidden;">
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/adddevhover.png" />
+					                <img data-u="image" src="assets/img/Einstellungen1.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtest.png" />
+					                <img data-u="image" src="assets/img/Einstellungen2.png" />
 					            </div>
 					            <div data-p="112.50" style="display: none;">
-					                <img data-u="image" src="assets/img/emvtesthover.png" />
+					                <img data-u="image" src="assets/img/Einstellungen3.png" />
 					            </div>
 					        </div>
 					        <!-- Arrow Navigator -->
@@ -517,7 +555,7 @@
 					        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2" onclick='changeDescription("einst", "forward")' ></span>
 					    </div>
 					    <script>
-					        jssor_slider_init("jssor_7","einst");
+					        jssor_slider_init("jssor_8","einst");
 					    </script>
 						
 					</div>
@@ -526,7 +564,7 @@
 							<a href="#datenbearbeiten" data-toggle="tooltip" title="vorheriges Kapitel"><i class="fa fa-arrow-circle-up icon"></i></a>
 						</div>
 						<div class="description" id="einst">
-							<h4>In der Datei devices.json im gleichen Verzeichnis wie die Executable des Programms sind bereits erfasste Geräte abgelegt mit Seriennummer, Modell, Hersteller und dem letzten Kalibrierungsdatum. Es kann ein neues Gerät der Datenbank hinzugefügt werden indem die vier Felder auf der linken Seite ausgefüllt werden und der Button <b>Device der DB hinzufügen</b> gedrückt wird.<br> Geräte können aus derr Datenbank entfernt werden indem das gewünschte Gerät in der rechten Liste markiert wird und der Button <b>aktuelles Device löschen</b> gedrückt wird.<br> Wenn ein Device aus der Datenbank ausgewählt werden soll, muss es in der Liste ausgewählt und der Dialog dann mit <b>Ok</b> bestätigt werden.</h4>
+							<h4>Im rechten Reiter "Einstellungen" können die Com-Ports den angeschlossenen Geräte zugewiesen werden. Weiter ist es möglich <b>Kalibirerungsdaten</b> für CDN's für das Gerät CWS 500N1 abzuspeichern und zu laden.</h4>
 						</div>
 						<div class="nextprev">
 							<a href="#contactWrap" data-toggle="tooltip" title="nächstes Kapitel"><i class="fa fa-arrow-circle-down icon"></i></a>
@@ -538,43 +576,21 @@
 	</div>
 	
 	<div id="contactWrap">
-		<div class="overlay">
-			<div class="container">
-				<div class="row">
-						<div class="col-xs-12">
-						<h2 class="sectionTitle">Kontakt</h2>
+		<div class="container">
+			<div class="row">
+					<div class="col-xs-12">
+					<h2 class="sectionTitle">Kontakt</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="blurb">
+					Sind noch Fragen offen? Kontaktieren Sie mich gerne per Mail 
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 text-center">
-						<div class="blurb">
-						Sind noch Fragen offen? Kontaktieren Sie mich gerne per Mail 
-						</div>
-					</div>
-				</div>
-					<div class="row" id="mailcontent">
-						<div class="col-sm-4 col-sm-offset-2">
-							<div class="inputContainer">
-							<label>Name</label>
-								<input type="text" name="contactName" id="contactName" value="" class="form-control" autocomplete="off" />
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="inputContainer">
-							<label class="screen-reader-text">Email</label>
-								<input type="text" name="email" id="email" value="" class="form-control" autocomplete="off"  />
-							</div>
-						</div>
-						<div class="col-sm-8 col-sm-offset-2">
-							<div class="inputContainer">
-							<label class="screen-reader-text">Nachricht</label>
-								<textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
-							</div>
-						</div>
-						<div class="col-sm-8 col-sm-offset-2">
-							<button name="submit" type="button" class="btn btn-primary btn-lg" id="bt1">senden</button>
-						</div>
-					</div>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a class="fa fa-envelope icon" href='mailto:jan_scholz@gmx.net'></a>
 			</div>
 		</div>
 	</div> <!-- /contactWrap -->

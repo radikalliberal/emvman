@@ -285,6 +285,10 @@ h3.sectionTitle {
 	padding-bottom: 120px;
 }
 
+.instruction .container {
+	width: 100%;
+}
+
 .instruction .nextprev {
 	font-size: 70px;
 	text-align:center;
@@ -298,14 +302,6 @@ h3.sectionTitle {
 .description {
 	height: 290px;
 	vertical-align: middle;
-}
-
-#vbau {
-   background-image: url('../assets/img/Versuchsaufbau1.png');
-}
-
-#vbau:hover {
-   background-image: url('../assets/img/Versuchsaufbau2.png');
 }
 
 
@@ -439,6 +435,74 @@ h3.sectionTitle {
 	font-size: 20px;
 }
 
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+.slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider ul li {
+   position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev , a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover , a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
 /**********************************************************************/
 /************************ CONTACT ************************************/
 /********************************************************************/
@@ -446,10 +510,7 @@ h3.sectionTitle {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
-#contactWrap .overlay {
-    background: url("../assets/img/60.png");
-	padding-bottom: 60px;
-}
+
 #contactWrap h2.sectionTitle {
     border-bottom: 1px solid #fff;
 }
@@ -458,6 +519,28 @@ h3.sectionTitle {
     font-weight: 300;
     margin-bottom: 40px;
 }
+
+#contactWrap .icon {
+	background-color: #428BCA;
+    border: 4px solid #428BCA;
+    border-radius: 50%;
+    color: #FFFFFF;
+    display: block;
+    font-size: 80px;
+    height: 148px;
+    line-height: 140px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 148px;
+}
+#contactWrap .icon:hover {
+    color: #428BCA;
+	background-color: #fff;
+    cursor: default;
+}
+
+
 #contactWrap label {
 
 }
@@ -472,17 +555,7 @@ h3.sectionTitle {
 	color: #555;
 	box-shadow: none;
 }
-#contactWrap .form-control:focus {
-	border-color: #aaa;
-    box-shadow: none;
-}
-#contactWrap textarea.form-control {
-	margin: 0 0 10px;
-    max-height: 300px;
-    max-width: 100%;
-    width: 100%;
-	min-height: 120px;
-}
+
 #contactWrap button.btn {
     margin-top: 15px;
     width: 100%;
