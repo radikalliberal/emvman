@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
-	
+	var ids = [
+		"start",
+		"hauptmenue",
+		"Versuchsaufbau",
+		"devices",
+		"main",
+		"emv",
+		"proto",
+		"daten",
+		"einst"
+	];
+
+	for (var i = 0; i < ids.length; i++) {
+		document.cookie = ids[i] + '=' + 0;
+	}
+		
     $('[data-toggle="tooltip"]').tooltip();
 
     $('a[href^="."]').on('click',function (e) {
@@ -15,23 +30,32 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
+    resizeDescription();
+	slide = ($(".slider"))[0];
+  	var metrics = calculateSize(slide);
+  	$(".slider").each(function() {
+  		resizeSlides(this,metrics);
+	});
 
+});
+
+//Resize Sliders when Window is resized
+
+$(window).resize(function() {
+  resizeDescription();
+  slide = ($(".slider"))[0];
+  var metrics = calculateSize(slide);
+  $(".slider").each(function() {
+  	resizeSlides(this,metrics);
+	});
 });
 
 
 // Slider Funktion zur Initialisierung von Imageslides 
 
 $.fn.initSlider = function(desctag) {
+
     var list = this.children('ul');
-   	var slideCount = list.children('li').length;
-	var slideWidth = list.children('li').width();
-	var slideHeight = list.children('li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	this.css({ width: slideWidth, height: slideHeight });
-	list.css({width: sliderUlWidth, marginLeft: - slideWidth });
-	
-    list.children('li:last-child').prependTo(list);
 
     this.children('a.control_prev').click(function () {
         moveLeft(this, list, list.children('li').width());
@@ -64,13 +88,30 @@ $.fn.initSlider = function(desctag) {
 };
  
 
- //Resize Sliders when Window is resized
 
- $( window ).resize(function() {
 
-  $(".slider").each(function () {
-  	var container = $(this).parent();
-  	var list = $(this).children('ul');
+ function resizeDescription() {
+ 	
+ 	$(".description").each(function() {
+	if($(window).width() > 1000) {
+	  	rightCol = $(this).parent();
+	  	secTit = rightCol.children(".sectionTitle");
+	  	takenSpace = secTit.height();
+	  	prevNext = rightCol.children(".nextprev");
+	  	prevNext = prevNext[1];
+	  	takenSpace += 2*(prevNext.offsetHeight);
+	  	height = $(window).height() - 280 - takenSpace;
+	  	$(this).css({height:height});
+	} else {
+		$(this).css("height","");
+	}
+  });
+ }
+
+
+ function calculateSize(elem) {
+  	var container = $(elem).parent();
+  	var list = $(elem).children('ul');
    	var slideCount = list.children('li').length;
 	var slideWidth = container.width();
 	var slideHeight = list.children('li').height();
@@ -85,17 +126,26 @@ $.fn.initSlider = function(desctag) {
 		slideHeight = slideWidth/aspectratio;
 	}
 
-	list.children('li').each(function () {
-		$(this).css({width:slideWidth, heigth:slideHeight});	
+	var metrics = {
+		slideWidth : slideWidth,
+		slideHeight : slideHeight,
+		sliderUlWidth : sliderUlWidth
+	}
+	return metrics;
+
+
+   }
+ function resizeSlides(elem, m) {
+
+ 	var list = $(elem).children('ul');
+ 	list.children('li').each(function () {
+		$(this).css({width:m.slideWidth, heigth:m.slideHeight});	
 		$(this).children("img").each( function() {
-			$(this).css({width:slideWidth, heigth:slideHeight});
+			$(this).css({width:m.slideWidth, heigth:m.slideHeight});
 		});
 	});
 	
-	$(this).css({ width: slideWidth, height: slideHeight});
-	list.css({width: sliderUlWidth, marginLeft: 0 });
-	
-    list.children('li:last-child').prependTo(list);
-   });
-});
+	$(elem).css({ width: m.slideWidth, height: m.slideHeight});
+	list.css({width: m.sliderUlWidth, marginLeft: 0 });
+ }
 

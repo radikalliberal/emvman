@@ -33,11 +33,6 @@
   		},{
   			"text": "<h4>Im Kommentarfeld können Hinweise zu dem Versuchsaufbau vermerkt werden. Mit den Buttons <b>Device</b> und <b>Bild</b> ist es möglich Bilder und <a href=\"#geraete\">Geräte</a> dem Versuchsaufbau zuzuweisen. Bereits erfasste Geräte oder Bilder können aus der Tabelle gelöscht werden indem sie markiert werden und im Anschluss <b>Entf</b> gedrückt wird. Es wird danach ein Dialog geöffnet der nochmals nachfragt ob wirklich gelöscht werden soll.</h4>"
   		}],
-      "pstart2": [{
-        "text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
-      },{
-        "text": "<h4>Wenn die Informationen eingetragen wurden, kann die Eingabe durch den <b>Ok</b>-Button bestätigt werden und das Hauptmenü wird sichtbar</h4>"
-      }],
   		"pstart": [{
   			"text": "<h4>Im ersten Fenster wird der Name des Prüfers, die Artikelnummer (Orderbase) und der Name der Baugruppe angegeben.</h4>"
   		},{
