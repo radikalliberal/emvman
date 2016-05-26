@@ -113,16 +113,19 @@ $.fn.initSlider = function(desctag) {
   	var container = $(elem).parent();
   	var list = $(elem).children('ul');
    	var slideCount = list.children('li').length;
-	var slideWidth = container.width();
+	var slideWidth = list.children('li').width();
 	var slideHeight = list.children('li').height();
 	var sliderUlWidth = slideCount * slideWidth;
 
 	var aspectratio = 1.2923588;
+	var width = $(window).width() - 220;
 	var height = $(window).height() - 220;
 
-	if(slideWidth > (height*aspectratio)) {
+	if(width > (height*aspectratio)) {
 		slideWidth = height*aspectratio;
+		slideHeight = height;
 	} else {
+		slideWidth = width;
 		slideHeight = slideWidth/aspectratio;
 	}
 
@@ -139,9 +142,9 @@ $.fn.initSlider = function(desctag) {
 
  	var list = $(elem).children('ul');
  	list.children('li').each(function () {
-		$(this).css({width:m.slideWidth, heigth:m.slideHeight});	
+		$(this).css({width:m.slideWidth, height:m.slideHeight});	
 		$(this).children("img").each( function() {
-			$(this).css({width:m.slideWidth, heigth:m.slideHeight});
+			$(this).css({width:m.slideWidth, height:m.slideHeight});
 		});
 	});
 	

@@ -70,11 +70,11 @@
         "text": "<h4><b>Versuchsaufbauten bearbeiten</b><br>Wie auch beim Anlegen des Versuchsaufbau ist es hier möglich Kommentare zu verfassen sowie Bilder und Geräte dem Versuchsaufbau zuzuweisen. Bilder und Geräte könnenm wie gewohnt , wenn nötig, entfernt werden.</h4>"
       }],
       "einst": [{
-        "text": "<h4>Im rechten Reiter \"Einstellungen\" können die Com-Ports den angeschlossenen Geräte zugewiesen werden. Weiter ist es möglich <b>Kalibirerungsdaten</b> für CDN's für das Gerät CWS 500N1 abzuspeichern und zu laden.</h4>"
+        "text": "<h4>Im rechten Reiter \"Einstellungen\" können die <b>Com-Ports</b> den angeschlossenen Geräte zugewiesen werden. Weiter ist es möglich <b>Kalibirerungsdaten</b> für CDN's für das Gerät CWS 500N1 abzuspeichern und zu laden. Außerdem können Geräte in die <b>Bauteildatenbank</b> eingepflegt/bearbeitet oder gelöscht werden. Der <b>Kompressionsgrad für Bilder</b> im Prüfbericht kann mittels des Reglers unten links eingestellt werden. Je nieriger der Wert desto kleiner ist die Datei und desto niedriger die Qualität der Bilder.</h4>"
       },{
         "text": "<h4>Wenn der Button \"Kalibirerung von CDN\" gedrückt wird erscheint ein Dialog und gibt die Möglichkeit Kalibirerungsdaten zu laden oder aus dem Speicher des Gerätes CWS 500N1 abzuspeichern auf die Festplatte.</h4>"
       },{
-        "text": "<h4>Wenn \"einlesen\" gewählt wurde oder wenn die Daten vollständig aus dem Gerät ausgelesen wurden erscheint ein Dateidialog. Die Daten können hier geladen bzw. gespeichert werden. Es sind bereits Kalibirerungsdaten unter \"N:\\intern\\Prüffeld\\EMV-Pruefung\\Kalibrationsdaten\" abgelegt.</h4>"
+        "text": "<h4>Wenn \"einlesen\" gewählt wurde oder wenn die Daten vollständig aus dem Gerät ausgelesen wurden erscheint ein Dateidialog. Die Daten können hier geladen bzw. gespeichert werden. Es sind bereits Kalibirerungsdaten unter \"N:\\intern\\Prüffeld\\EMV-Pruefung\\Kalibrationsdaten\" abgelegt. In Analogie dazu erscheint wenn \"auslesen\" gewählt wurde nachdem die Daten ausgelesen wurden ein Dateidialog zum speichern der Kalibirerungsdaten.</h4>"
       }]
   }
 }
